@@ -43,6 +43,9 @@
             height: 70px;
             margin-bottom: 45px;
             justify-content: space-between;
+            label {
+                width: 47%;
+            }
         }
         &__name {
             @extend %intouchinput;

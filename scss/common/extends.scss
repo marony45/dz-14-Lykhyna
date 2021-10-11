@@ -56,7 +56,8 @@
 }
 
 %intouchinput {
-  @extend %h100w45;
+  height: 100%;
+  width: 100%;
   @extend %bordernone5px;
   background-color: $grey;
   &::placeholder {

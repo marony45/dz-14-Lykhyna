@@ -77,9 +77,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-@font-face {
-  font-family: "Open Sans", sans-serif;
-}
 header nav ul li:hover, header nav ul li {
   height: 90px;
   align-items: center;
@@ -137,6 +134,8 @@ header nav ul li:hover, header nav ul li {
 }
 
 .intouch__input__email, .intouch__input__name {
+  height: 100%;
+  width: 100%;
   background-color: lightgrey;
 }
 .intouch__input__email::placeholder, .intouch__input__name::placeholder {
@@ -147,7 +146,7 @@ header nav ul li:hover, header nav ul li {
   color: transparent;
 }
 
-.services__block1 a, .intouch__input__email, .intouch__input__name {
+.services__block1 a {
   height: 100%;
   width: 45%;
 }
@@ -186,6 +185,10 @@ header nav ul li:hover, header nav ul li {
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 .header__wrapper {
@@ -256,6 +259,7 @@ header nav ul li a {
 }
 .organisation__block2 iframe {
   width: 100%;
+  border: 0;
 }
 
 .services__wrapper {
@@ -502,6 +506,9 @@ header nav ul li a {
   height: 70px;
   margin-bottom: 45px;
   justify-content: space-between;
+}
+.intouch__input__wrapper label {
+  width: 47%;
 }
 .intouch__textarea {
   width: 100%;
