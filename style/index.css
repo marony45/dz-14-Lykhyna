@@ -157,7 +157,7 @@ header nav ul li:hover, header nav ul li {
   color: white;
 }
 
-.intouch__input__wrapper, .ourteam__item {
+.ourteam__item {
   margin-top: 70px;
   justify-content: space-between;
 }
@@ -229,7 +229,7 @@ header nav ul li a {
 }
 .organisation__content div h1 {
   text-transform: uppercase;
-  font-size: 64px;
+  font-size: 59px;
   margin: 0;
   letter-spacing: 6px;
   word-spacing: -7px;
@@ -466,30 +466,42 @@ header nav ul li a {
   padding-top: 100px;
   height: 1000px;
 }
-.intouch__content {
-  flex-grow: 0;
-  justify-content: center;
-  align-items: flex-end;
-}
 .intouch__item1__wrapper {
-  width: 720px;
-  margin: 0;
+  width: 60%;
+  margin: 0 100px 0 0;
 }
 .intouch__text {
+  width: 60%;
   margin: 50px 0 0;
 }
 .intouch__text::after {
   margin: 0;
   padding-top: 55px;
+  margin-bottom: 55px;
 }
 .intouch__contactus__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
   background-color: #313030;
   color: white;
   width: auto;
+  position: relative;
+}
+.intouch__contactus__wrapper:after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background: #313030;
+  right: -100vw;
+  top: 0;
 }
 .intouch__input__wrapper {
   height: 70px;
   margin-bottom: 45px;
+  justify-content: space-between;
 }
 .intouch__textarea {
   width: 100%;
@@ -512,12 +524,6 @@ header nav ul li a {
   height: 85px;
   width: 100%;
 }
-.intouch__contactus__wrapper {
-  padding: 140px 0 145px 80px;
-  position: relative;
-  left: 1150px;
-  top: -505px;
-}
 .intouch__contactus__wrapper .address {
   width: 280px;
 }
@@ -537,6 +543,10 @@ header nav ul li a {
 
 .tel {
   color: white;
+}
+
+body main .intouch__wrapper {
+  overflow: hidden;
 }
 
 .footer__wrapper {

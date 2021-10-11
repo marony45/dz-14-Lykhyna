@@ -3,35 +3,46 @@
         padding-top: 100px;
         height: 1000px;
     }
-    &__content {
-        flex-grow: 0;
-        justify-content: center;
-        align-items: flex-end;
-    }
     &__item1__wrapper {
-        width: 720px;
-        margin: 0;
+        width: 60%;
+        margin: 0 100px 0 0;
     }
     &__title {
        @extend %title;
     }
     &__text {
+        width: 60%;
         margin:50px 0 0;
         &::after {
             @include redcross(0);
             padding-top: 55px;
+            margin-bottom: 55px;
         }
     }
     &__contactus__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 80px;
         background-color: $dark;
         color: $white;
         width: auto;
+        position: relative;
+        &:after {
+            content: ' ';
+            position: absolute;
+            height: 100%;
+            width: 100vw;
+            background: #313030;
+            right: -100vw;
+            top: 0;
+        }
     }
     &__input {
         &__wrapper {
             height: 70px;
             margin-bottom: 45px;
-            @extend %marjust;
+            justify-content: space-between;
         }
         &__name {
             @extend %intouchinput;
@@ -66,10 +77,6 @@
     }
     &__contactus {
         &__wrapper {
-            padding: 140px 0 145px 80px;
-            position: relative;
-            left: 1150px;
-            top: -505px;
             .address {
                 width: 280px;
                 @extend %contactus;
@@ -98,4 +105,10 @@
     color: $white;
 }
 
-
+body {
+    main {
+        .intouch__wrapper {
+            overflow: hidden;
+        }
+    }
+}
